@@ -36,7 +36,7 @@ for (let allBtn of allBtns) {
         event.target.setAttribute("disabled", true)
         event.target.style.opacity = "0.2"
         event.target.style.cursor = "default"
-        alert ("Your Work Successful")
+        alert ("Board updated successfully")
        
         setTimeout(() => {
             if(countForAlert === 0) {
@@ -50,7 +50,7 @@ for (let allBtn of allBtns) {
         const addHistory = document.getElementById("activity-container")
         const div = document.createElement("div");
         div.innerHTML = `
-            <div class="mt-4 mx-5 main-bg-color p-3 rounded-xl">
+            <div class="mt-4 mx-5 main-bg-color p-3 rounded-xl text-[#000000a9]">
                 <h3>You have completed the task ${historyContent} at ${new Date().toLocaleTimeString()}</h3>
             </div>
         `
