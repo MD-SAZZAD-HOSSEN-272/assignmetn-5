@@ -62,15 +62,14 @@
                             <div class="flex justify-center items-center main-bg-color m-3 space-x-4  py-3  rounded-lg">
                                 <img src="assets/calender.png" alt="">
                                 <div>
-                                    <h5 class="title-text-color">Wed , </h5>
-                                    <p class="title-text-color">
-                                        Jul 28 2025</p>
+                                    <h5 id="time-day" class="title-text-color"></h5>
+                                    <p id="time-date" class="title-text-color font-bold"></p>
                                 </div>
                             </div>
                         </div>
                         <hr class="border-dotted text-[#00000033]">
                         <div class="grid grid-cols-3 gap-7 mx-3 my-5">
-                            <div class="completed-btn main-bg-color p-4 rounded-lg">
+                            <div class="main-bg-color p-4 rounded-lg">
                                 <p class="bg-white p-2 rounded-md title-text-color inline">ShopEase</p>
                                 <h2 class="title-text-color text-2xl font-medium my-2">Fix Mobile Button Issue</h2>
                                 <p class="bg-white px-2 py-4 rounded-lg text-[#0000006c]">Debug using Chrome DevTools, check for overlappin</p>
@@ -144,17 +143,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" col-span-1 bg-white rounded-2xl">
+                    <div  class=" col-span-1 bg-white rounded-2xl">
                         <div class="mx-auto w-48 py-5">
                             <div class="flex space-x-5 mb-4">
                                 <img src="assets/activity.png" alt="">
                                 <h2 class="title-text-color text-xl font-medium title-text-color">Activity Log</h2>
                             </div>
-                            <button class="bg-primary-color px-5 py-3 rounded-lg text-white ml-3">Clear History</button>
+                            <button id="clear-btn" class="bg-primary-color px-5 py-3 rounded-lg text-white ml-3">Clear History</button>
                         </div>
                         <hr class="border-dotted text-[#3751fd3a]">
-                        <div class="mt-4 mx-5 main-bg-color p-3 rounded-">
-                            <h3>You have Complete The Task Add Dark Mode at 12:48:15 PM</h3>
+
+                        <!-- Add Activity History -->
+                        <div id="activity-container">
+
                         </div>
                     </div>
                 </div>
