@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Daisy CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/452b98e7a9.js" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body" class="poppins-thin main-bg-color">
+    
+    <div class="container mx-auto py-4">
+        <header>
+            <!-- navbar -->
+            <nav class="flex justify-between bg-white px-7 py-5  rounded-xl">
+                <div class="flex justify-center items-center space-x-2">
+                    <img src="assets/logo.png" alt="">
+                    <h1 class="font-light text-4xl">Dev<span class="font-bold text-[#00303C]">Board</span></h1>
+                </div>
+                <div class="flex justify-center items-center space-x-5">
+                    <div class="main-bg-color p-3 rounded-md">
+                        <i class="fa-solid fa-check bg-primary-color text-white p-2 rounded-lg mr-3"></i>
+                        <span id="count-from-23" class="text-2xl font-bold">23</span>
+                    </div>
+                    <img id="change-bg-color" class="cursor-pointer main-bg-color p-3 rounded-full" src="assets/theme-btn.png" alt="">
+                </div>
+            </nav>
+        </header>
+            <!-- main-->
+
+            <main>
+                <div class="grid grid-cols-4 mt-5 gap-6">
+                    <div class="col-span-3 bg-white rounded-2xl">
+                        <div class="grid grid-cols-4">
+                            <div class="flex justify-center items-center main-bg-color m-3  py-3  rounded-lg">
+                                <i class="fa-solid fa-check bg-primary-color text-white p-2 rounded-lg mr-3"></i>
+                                <div>
+                                    <h5 class="title-text-color">Task assigned</h5>
+                                    <p id="count-to-6" class="title-text-color font-bold text-2xl">6</p>
+                                </div>
+                            </div>
+                            <div id="blog-question-btn" class="col-span-2 flex lg:pl-10 items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#7886e0] from m-3  py-3 px-2  rounded-lg cursor-pointer">
+                                <img src="assets/board.png" alt="">
+                                <div>
+                                    <h5 class=" text-white">Discover Something</h5>
+                                    <p class=" font-bold text-white">New Today!</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-center items-center main-bg-color m-3 space-x-4  py-3  rounded-lg">
+                                <img src="assets/calender.png" alt="">
+                                <div>
+                                    <h5 class="title-text-color">Wed , </h5>
+                                    <p class="title-text-color">
+                                        Jul 28 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border-dotted text-[#00000033]">
+                        <div class="grid grid-cols-3 gap-7 mx-3 my-5">
+                            <div class="completed-btn main-bg-color p-4 rounded-lg">
+                                <p class="bg-white p-2 rounded-md title-text-color inline">ShopEase</p>
+                                <h2 class="title-text-color text-2xl font-medium my-2">Fix Mobile Button Issue</h2>
+                                <p class="bg-white px-2 py-4 rounded-lg text-[#0000006c]">Debug using Chrome DevTools, check for overlappin</p>
+                                <div class="flex items-center justify-between mt-4">
+                                    <div>
+                                        <h6 class="text-[#0000008a]">Deadline</h6>
+                                        <p class="title-text-color font-medium">21 March 2025</p>
+                                    </div>
+                                    <button class="completed-btn cursor-pointer bg-primary-color px-2 py-3 rounded-lg text-white">Completed</button>
+                                </div>
+                            </div>
+                            <div class="main-bg-color p-4 rounded-lg">
+                                <p class="bg-white p-2 rounded-md title-text-color inline">CloudSync</p>
+                                <h2 class="title-text-color text-2xl font-medium my-2">Add Dark Mode</h2>
+                                <p class="bg-white px-2 py-4 rounded-lg text-[#0000006c]">Store the user's preference in localStorage, update CSS varia</p>
+                                <div class="flex items-center justify-between mt-4">
+                                    <div>
+                                        <h6 class="text-[#0000008a]">Deadline</h6>
+                                        <p class="title-text-color font-medium">21 March 2025</p>
+                                    </div>
+                                    <button class="completed-btn cursor-pointer bg-primary-color px-2 py-3 rounded-lg text-white">Completed</button>
+                                </div>
+                            </div>
+                            <div class="main-bg-color p-4 rounded-lg">
+                                <p class="bg-white p-2 rounded-md title-text-color inline">SwiftPay</p>
+                                <h2 class="title-text-color text-2xl font-medium my-2">Optimize  Home page </h2>
+                                <p class="bg-white px-2 py-4 rounded-lg text-[#0000006c]">Debug using Chrome DevTools, check for overlappin</p>
+                                <div class="flex items-center justify-between mt-4">
+                                    <div>
+                                        <h6 class="text-[#0000008a]">Deadline</h6>
+                                        <p class="title-text-color font-medium">21 March 2025</p>
+                                    </div>
+                                    <button class="completed-btn cursor-pointer bg-primary-color px-2 py-3 rounded-lg text-white">Completed</button>
+                                </div>
+                            </div>
+                            <div class="main-bg-color p-4 rounded-lg">
+                                <p class="bg-white p-2 rounded-md title-text-color inline">Meta</p>
+                                <h2 class="title-text-color text-2xl font-medium my-2">Add new emoji 🤲</h2>
+                                <p class="bg-white px-2 py-4 rounded-lg text-[#0000006c]">Debug using Chrome DevTools, check for overlappin</p>
+                                <div class="flex items-center justify-between mt-4">
+                                    <div>
+                                        <h6 class="text-[#0000008a]">Deadline</h6>
+                                        <p class="title-text-color font-medium">21 March 2025</p>
+                                    </div>
+                                    <button class="completed-btn cursor-pointer bg-primary-color px-2 py-3 rounded-lg text-white">Completed</button>
+                                </div>
+                            </div>
+                            <div class="main-bg-color p-4 rounded-lg">
+                                <p class="bg-white p-2 rounded-md title-text-color inline">Google LLC</p>
+                                <h2 class="title-text-color text-2xl font-medium my-2">Integrate OpenAI API </h2>
+                                <p class="bg-white px-2 py-4 rounded-lg text-[#0000006c]">Debug using Chrome DevTools, check for overlappin</p>
+                                <div class="flex items-center justify-between mt-4">
+                                    <div>
+                                        <h6 class="text-[#0000008a]">Deadline</h6>
+                                        <p class="title-text-color font-medium">21 March 2025</p>
+                                    </div>
+                                    <button class="completed-btn cursor-pointer bg-primary-color px-2 py-3 rounded-lg text-white">Completed</button>
+                                </div>
+                            </div>
+                            <div class="main-bg-color p-4 rounded-lg">
+                                <p class="bg-white p-2 rounded-md title-text-color inline">Glassdoar</p>
+                                <h2 class="title-text-color text-2xl font-medium my-2">Improve Job searching </h2>
+                                <p class="bg-white px-2 py-4 rounded-lg text-[#0000006c]">Debug using Chrome DevTools, check for overlappin</p>
+                                <div class="flex items-center justify-between mt-4">
+                                    <div>
+                                        <h6 class="text-[#0000008a]">Deadline</h6>
+                                        <p class="title-text-color font-medium">21 March 2025</p>
+                                    </div>
+                                    <button class="completed-btn cursor-pointer bg-primary-color px-2 py-3 rounded-lg text-white">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-span-1 bg-white rounded-2xl">
+                        <div class="mx-auto w-48 py-5">
+                            <div class="flex space-x-5 mb-4">
+                                <img src="assets/activity.png" alt="">
+                                <h2 class="title-text-color text-xl font-medium title-text-color">Activity Log</h2>
+                            </div>
+                            <button class="bg-primary-color px-5 py-3 rounded-lg text-white ml-3">Clear History</button>
+                        </div>
+                        <hr class="border-dotted text-[#3751fd3a]">
+                        <div class="mt-4 mx-5 main-bg-color p-3 rounded-">
+                            <h3>You have Complete The Task Add Dark Mode at 12:48:15 PM</h3>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        
+
+
+
+    </div>
+
+
+    <script src="utility.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
