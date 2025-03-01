@@ -32,20 +32,26 @@ for (let allBtn of allBtns) {
     allBtn.addEventListener("click", function(event) {
         countBtn++;
         getById("count-from-23").innerText = countFrom23Converted + countBtn;
-        getById("count-to-6").innerText = countTo6Converted - countBtn;
+        const countForAlert = getById("count-to-6").innerText = countTo6Converted - countBtn;
         event.target.setAttribute("disabled", true)
         event.target.style.opacity = "0.2"
         event.target.style.cursor = "default"
         alert ("Your Work Successful")
+       
+        setTimeout(() => {
+            if(countForAlert === 0) {
+                alert ("Congratulation you have completed all task")
+            }
+        }, 200);
 
-        const historyContent = event.target.parentElement.parentElement.querySelector("p.px-2").innerText;
+        const historyContent = event.target.parentElement.parentElement.querySelector("h2").innerText;
         
 
         const addHistory = document.getElementById("activity-container")
         const div = document.createElement("div");
         div.innerHTML = `
             <div class="mt-4 mx-5 main-bg-color p-3 rounded-xl">
-                <h3>${historyContent} ${new Date().toLocaleTimeString()}</h3>
+                <h3>You have completed the task ${historyContent} at ${new Date().toLocaleTimeString()}</h3>
             </div>
         `
         addHistory.appendChild(div)
@@ -53,8 +59,10 @@ for (let allBtn of allBtns) {
 }
 
 document.getElementById("clear-btn").addEventListener("click", function() {
-    addHistory.classList.add("hidden")
+    addHistory.innerHTML = "";
 })
+
+
 
 
 

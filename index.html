@@ -28,23 +28,23 @@
             <nav class="flex justify-between bg-white px-7 py-5  rounded-xl">
                 <div class="flex justify-center items-center space-x-2">
                     <img src="assets/logo.png" alt="">
-                    <h1 class="font-light text-4xl">Dev<span class="font-bold text-[#00303C]">Board</span></h1>
+                    <h1 class="font-light text-xl lg:text-4xl">Dev<span class="font-bold text-[#00303C]">Board</span></h1>
                 </div>
-                <div class="flex justify-center items-center space-x-5">
+                <div class="lg:flex justify-center items-center lg:space-x-5 space-y-3 lg:space-y-0">
                     <div class="main-bg-color p-3 rounded-md">
                         <i class="fa-solid fa-check bg-primary-color text-white p-2 rounded-lg mr-3"></i>
                         <span id="count-from-23" class="text-2xl font-bold">23</span>
                     </div>
-                    <img id="change-bg-color" class="cursor-pointer main-bg-color p-3 rounded-full" src="assets/theme-btn.png" alt="">
+                    <img id="change-bg-color" class="ml-10 lg:ml-0 cursor-pointer main-bg-color p-3 rounded-full" src="assets/theme-btn.png" alt="">
                 </div>
             </nav>
         </header>
             <!-- main-->
 
             <main>
-                <div class="grid grid-cols-4 mt-5 gap-6">
-                    <div class="col-span-3 bg-white rounded-2xl">
-                        <div class="grid grid-cols-4">
+                <div class="grid lg:grid-cols-4 mt-5 gap-6">
+                    <div class="lg:col-span-3 bg-white rounded-2xl ">
+                        <div class="grid grid-cols-1 md:grid-cols-4">
                             <div class="flex justify-center items-center main-bg-color m-3  py-3  rounded-lg">
                                 <i class="fa-solid fa-check bg-primary-color text-white p-2 rounded-lg mr-3"></i>
                                 <div>
@@ -68,7 +68,7 @@
                             </div>
                         </div>
                         <hr class="border-dotted text-[#00000033]">
-                        <div class="grid grid-cols-3 gap-7 mx-3 my-5">
+                        <div class="grid lg:grid-cols-3 gap-7 mx-3 my-5">
                             <div class="main-bg-color p-4 rounded-lg">
                                 <p class="bg-white p-2 rounded-md title-text-color inline">ShopEase</p>
                                 <h2 class="title-text-color text-2xl font-medium my-2">Fix Mobile Button Issue</h2>
@@ -149,7 +149,7 @@
                                 <img src="assets/activity.png" alt="">
                                 <h2 class="title-text-color text-xl font-medium title-text-color">Activity Log</h2>
                             </div>
-                            <button id="clear-btn" class="bg-primary-color px-5 py-3 rounded-lg text-white ml-3">Clear History</button>
+                            <button id="clear-btn" class="bg-primary-color px-5 py-3 rounded-lg text-white ml-3 cursor-pointer">Clear History</button>
                         </div>
                         <hr class="border-dotted text-[#3751fd3a]">
 
